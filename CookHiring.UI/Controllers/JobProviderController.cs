@@ -30,6 +30,7 @@ namespace CookHiring.UI.Controllers
         [HttpPost]
         public ActionResult AddJob(Job job)
         {
+
             jobRepository.AddJob(job);
             return RedirectToAction("Dashboard");
         }
